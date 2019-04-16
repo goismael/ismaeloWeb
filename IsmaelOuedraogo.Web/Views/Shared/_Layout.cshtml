@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Modern Business - @ViewBag.Title</title>
+    <title>Ismaelo Technology - @ViewBag.Title</title>
 
     <!-- Bootstrap -->
     <link href="@Url.Content("/css/bootstrap.css")" rel="stylesheet">
@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-                @Html.ActionLink("IsmaelO", "Index", new { controller = "Home" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Ismaelo Technology", "Index", new { controller = "Home" }, new { @class = "navbar-brand" })
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,19 +41,19 @@
                     <li id="contact">
                         @Html.ActionLink("Contact", "Index", "Contact")
                     </li>
-                    <li id="portfolio" class="dropdown">
+                    @*<li id="portfolio" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">*@
                             
-                            <li id="2columnportfolio">
+                            @*<li id="2columnportfolio">
                                 @Html.ActionLink("2 Column Portfolio", "TwoColumn", "Portfolio")
-                            </li>
+                            </li>*@
                             
                             
                             
-                        </ul>
-                    </li>
-                    <li id="blog" class="dropdown">
+                        @*</ul>
+                    </li>*@
+                    @*<li id="blog" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -62,7 +62,7 @@
                                 @Html.ActionLink("Blog Post", "Post", "Blog")
                             </li>
                         </ul>
-                    </li>
+                    </li>*@
                     
                 </ul>
             </div>
@@ -78,9 +78,9 @@
         <hr>
 
         <footer>
-            <div class="row">
+            <div class="row text-center" >
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Company 2013</p>
+                    <p>&copy; @DateTime.Now.Year - Ismaelo.com - All rights reserved</p>
                 </div>
             </div>
         </footer>
